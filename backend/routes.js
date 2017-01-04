@@ -20,6 +20,8 @@ module.exports = function() {
   });
 
   /* Your code here */
-
+  router.post('/trains/data', function(req, res){
+    database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
+  }
   return router
 }();
