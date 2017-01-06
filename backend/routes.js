@@ -18,6 +18,12 @@ module.exports = function() {
       res.send(results);
     });
   });
+  
+   router.post('/trains/data', function(req,res){
+    database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
+      res.send(results);
+  
+  
 
   /* Your code here */
 
