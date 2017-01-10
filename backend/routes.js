@@ -17,6 +17,10 @@ module.exports = function() {
     return res.render('trains.html');
   });
 
+ router.get('/connect', function(req,res){
+    return res.render('connect1.html');
+  });
+
   router.get('/trains/data', function(req,res){
     database.executeQuery("SELECT * FROM trains", function(results) {
       res.send(results);
@@ -27,8 +31,22 @@ module.exports = function() {
     database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
       res.send(results);
     });
+<<<<<<< HEAD
    });
 
+=======
+    });
+  router.post('/connect', function(req,res){
+    database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
+      res.send(results);
+    });
+    });
+
+  /* Your code here */
+  /*router.post('/trains/data', function(req, res){
+    database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
+  }*/
+>>>>>>> 9181ec409e3c42531ee68b34a964dc57db26e7ec
   return router
 }();
 
