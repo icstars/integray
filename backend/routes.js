@@ -8,6 +8,10 @@ module.exports = function() {
   router.get('/', function(req,res){
     return res.render('helloworld.html');
   });
+  
+   router.get('/connect', function(req,res){
+    return res.render('connect.html');
+  });
 
   router.get('/trains', function(req,res){
     return res.render('trains.html');
@@ -22,12 +26,9 @@ module.exports = function() {
    router.post('/trains/data', function(req,res){
     database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
       res.send(results);
-  
-  
+    });
+   });
 
-  /* Your code here */
-  router.post('/trains/data', function(req, res){
-    database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
-  }
   return router
 }();
+
