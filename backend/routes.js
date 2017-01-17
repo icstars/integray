@@ -14,7 +14,15 @@ module.exports = function() {
   });
 
  router.get('/connects', function(req,res){
+<<<<<<< HEAD
+
+    return res.render('connect1.html');
+
     return res.render('connects.html');
+
+=======
+    return res.render('connects.html');
+>>>>>>> 8f0e9f6ffc023ffa2b57e0b2353aca064badc8b4
   });
 
   router.get('/trains/data', function(req,res){
@@ -28,7 +36,10 @@ module.exports = function() {
       res.send(results);
     });
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 8f0e9f6ffc023ffa2b57e0b2353aca064badc8b4
     });
   router.post('/connect', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
