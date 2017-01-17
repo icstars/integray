@@ -6,13 +6,9 @@ var database = require('./c37_modules/database');
 module.exports = function() {
 
   router.get('/', function(req,res){
-    return res.render('helloworld.html');
+    return res.render('index.html');
   });
   
-   router.get('/connect', function(req,res){
-    return res.render('connect.html');
-  });
-
   router.get('/trains', function(req,res){
     return res.render('trains.html');
   });
