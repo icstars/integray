@@ -17,7 +17,7 @@ module.exports = function() {
     return res.render('trains.html');
   });
 
- router.get('/connect', function(req,res){
+ router.get('/connects', function(req,res){
     return res.render('connect1.html');
   });
 
