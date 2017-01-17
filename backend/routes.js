@@ -31,8 +31,6 @@ module.exports = function() {
     database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
       res.send(results);
     });
-<<<<<<< HEAD
-   });
 
 =======
     });

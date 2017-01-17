@@ -1,6 +1,6 @@
 ### Making a router
 
-We created a directory called `/routers` were you can create routers for the different html pages. The idea is that every router will have the single responsibilty for each page. When you create a router you will need to use the `router.get('route', callbackFn())` or `router.post('route', callbackFn())` to make the backend serve your html page, results from a database query, or inserting data into the database. Examples of this are seen in `routers/helloworld.js` and `routers/trainsList.js`.
+We created a directory called `/routers` where you can create routers for the different html pages. The idea is that every router will have the single responsibilty for each page. When you create a router you will need to use the `router.get('route', callbackFn())` or `router.post('route', callbackFn())` to make the backend serve your html page, results from a database query, or inserting data into the database. Examples of this are seen in `routers/helloworld.js` and `routers/trainsList.js`.
 
 The following is a template of what the file will look like. You will need to make sure you have these for everything to work correctly.
 
