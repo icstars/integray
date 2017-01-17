@@ -1,5 +1,9 @@
  body     {
          background-color: #5d5776;
+        background-image: url(http://il6.picdn.net/shutterstock/videos/12013151/thumb/1.jpg);
+        background-repeat: repeat;
+        
+        
          
      }
     
@@ -10,8 +14,9 @@
 	font-variant: normal;
 	font-weight: bold;
 	line-height: 30px;
-	color: #aa 1133;
+	color: white;
 	text-align: center;
+	
 }
  	
  div 
@@ -23,7 +28,12 @@
  	
  	font-weight: bolder;
  	font-family: Convergence;
- 	background-color: #aa1133;
+ 	background-color: #3a00a1;
+ 	
  }
-
+#login:hover
+{
+    background-color: white;
+    color: #3a00a1;
+}
  

@@ -6,19 +6,15 @@ var database = require('./c37_modules/database');
 module.exports = function() {
 
   router.get('/', function(req,res){
-    return res.render('helloworld.html');
+    return res.render('index.html');
   });
   
-   router.get('/connect', function(req,res){
-    return res.render('connect.html');
-  });
-
   router.get('/trains', function(req,res){
     return res.render('trains.html');
   });
 
- router.get('/connect', function(req,res){
-    return res.render('connect1.html');
+ router.get('/connects', function(req,res){
+    return res.render('connects.html');
   });
 
   router.get('/trains/data', function(req,res){
@@ -32,7 +28,7 @@ module.exports = function() {
       res.send(results);
     });
 
-=======
+
     });
   router.post('/connect', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
@@ -44,7 +40,7 @@ module.exports = function() {
   /*router.post('/trains/data', function(req, res){
     database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
   }*/
->>>>>>> 9181ec409e3c42531ee68b34a964dc57db26e7ec
+
   return router
 }();
 
