@@ -17,7 +17,7 @@ module.exports = function() {
     return res.render('trains.html');
   });
 
- router.get('/connect', function(req,res){
+ router.get('/connects', function(req,res){
     return res.render('connect1.html');
   });
 
@@ -32,6 +32,10 @@ module.exports = function() {
       res.send(results);
     });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc2be0dbdc63751f6781947ccc1b4c6889b4a16c
     });
   router.post('/connect', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
@@ -43,7 +47,11 @@ module.exports = function() {
   /*router.post('/trains/data', function(req, res){
     database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
   }*/
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> bc2be0dbdc63751f6781947ccc1b4c6889b4a16c
   return router
 }();
 
