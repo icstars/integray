@@ -32,7 +32,7 @@ module.exports = function() {
       res.send(results);
     });
 
-=======
+
     });
   router.post('/connect', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
@@ -44,7 +44,7 @@ module.exports = function() {
   /*router.post('/trains/data', function(req, res){
     database.executeQuery("INSERT INTO trains ( VALUES (905, purpleline, true) ")
   }*/
->>>>>>> 9181ec409e3c42531ee68b34a964dc57db26e7ec
+
   return router
 }();
 
