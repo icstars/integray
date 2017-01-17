@@ -1,4 +1,4 @@
-
+'use strict'
 var router = require('express').Router();
 
 function check(form) { /*function to check userid & password*/
