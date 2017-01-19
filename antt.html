@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+                    </head>
+    <body>
+      
+      
+         <canvas id="myCanvas" width="600" height="100">
+
+<script>
+     var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Existing Challenge",10,50);
+  </script>
+      </canvas>
+      
+      <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Challenge 1</th>
+    <th>Challenge 2</th>
+    <th>Challenge 3</th>
+  </tr>
+  <tr>
+    <td>Running</td>
+    <td>Bikeing</td>
+    <td>Codeing Marathon</td>
+  </tr>
+  <tr>
+    <td>Golfing</td>
+    <td>Swimming</td>
+    <td>Reading</td>
+  </tr>
+  <tr>
+    <td>what ever</td>
+    <td>something else</td>
+    <td>some more</td>
+  </tr>
+</table>
+
+
+<div class="container">  
+<form action="action_page.php">
+<p>END DATE</p>    
+<input type="Date" name="Date">
+<br>
+
+<input type="submit">
+</form> 
+</div>
+
+<div class="container">
+  <h2>Challenge Progress </h2>
+  <p>Your almost there,keep up the good work and your bagde will be on the way.</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+          <a href="ant.html"><button>Back</button></a>
+</div>
