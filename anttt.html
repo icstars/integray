@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                </head>
+<body>
+    
+     <canvas id="myCanvas" width="600" height="100">
+
+<script>
+     var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Create Challenge",10,50);
+  </script>
+      </canvas>
+      
+     <div class="container">
+      <form>
+    <div class="col-xs-4">
+      <label for="usr">Challenge Name:</label>
+      <input type="text" class="form-control" id="text" placeholder="Name">
+    </div>
+    <div class="col-xs-4">
+      <label for="Challenge">Challenge Type:</label>
+      <input type="text" class="form-control" id="text" placeholder="Name">
+      </div>
+   
+   <div class="container">  
+<form action="action_page.php">
+<input type="Date" name="Date" value="number">From
+<br>
+<input type="Date" name="Date" value="number">To 
+<br><br>
+<input type="submit">
+</form> 
+</div>
+
+
+ <div class="container">
+  <h2>Add People</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+ <div class="container">
+          <a href="ant.html"><button>Back</button></a>
+           <a href=""><button>Next</button></a>
+            </div>
+  
+  <div class="container">
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Goal</button>
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Goal Header</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="text" placeholder="Text">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          </div>
+        </div>
+        </div>
+             
+  
+  
+         <div class="container">
+  <h2>Alert</h2>
+    <div class="alert alert-success">
+    <strong>Success!</strong> You created a challenge <a href="#" class="alert-link">and your invites went out</a>.
+  </div>
+
+</body>
+</html>

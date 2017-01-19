@@ -10,6 +10,9 @@
       color: #303030;
       font-weight: 600;
       margin-bottom: 30px;
+      border-style: solid;
+      border-width: thin;
+      border-color: #FFFFFF;
   }
   h4 {
       font-size: 19px;
@@ -23,9 +26,14 @@
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
+      background-image: url("https://postimg.org/image/kgl2d7p4x/");
+      
+
+      
   }
   .container-fluid {
       padding: 60px 50px;
+      
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -38,6 +46,7 @@
       color: #f4511e;
       font-size: 200px;
   }
+
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
@@ -58,7 +67,7 @@
   .carousel-indicators li.active {
       background-color: #f4511e;
   }
-  .item h4 {
+  .item {
       font-size: 19px;
       line-height: 1.375em;
       font-weight: 400;
@@ -108,7 +117,7 @@
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #aa1133;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -121,7 +130,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: #5D5776 !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
