@@ -6,9 +6,14 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
-             h1{
-                 font-family:sans-serif;
-             }
+    body { 
+        background-image: url("http://bit.ly/2k9v8M5");
+       color: white;
+    }
+         
+    .h1{
+        font-family:sans-serif;
+    }
              
              .navbar {
       margin-bottom: 0;
@@ -32,11 +37,28 @@
       border-color: transparent;
       color: #fff !important;
   }
-         </style>
+    .input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}     
+   table{
+       font-weight: bold;
+   }
+   
+    </style>
+         
      
          
   </head>
-<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+>
     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -62,19 +84,7 @@
   </div>
 </nav><br><br>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      <h1><strong>Edit Challenges</strong></h1>
+    <h1><strong>Edit Challenges</strong></h1>
 <!--    
      <canvas id="myCanvas" width="600" height="100">
 
@@ -91,13 +101,13 @@
      <div class="container">
       <form>
     <div class="col-xs-4">
-     <div> Challenge Name:
+     <div> <strong>Challenge Name:</strong>
   <input type="disabled" name="name" placeholder="Book Worm">
     </div>
     <div class="col-xs-4">
       <form></div>
-    <div>
-  Challenge Type:<br>
+    <div><strong>
+  Challenge Type:</strong><br>
   <input type="disabled" name="type" placeholder="#Read #Books #Bookworm"><br>
 </form><br></div>
       </div>
@@ -105,9 +115,9 @@
    
    <div class="container">  
 <form action="action_page.php">
-<input type="int" name="Date" value="01/27/2017">From
+<input type="int" name="Date" value="01/27/2017"><strong>From</strong>
 <br>
-<input type="int" name="Date" value="02/27/2017">To 
+<input type="int" name="Date" value="02/27/2017"><strong>To</strong> 
 <br><br>
 
 </form> 
@@ -129,33 +139,39 @@
 
 
  <div class="container">
-  <h2>Add People</h2>
+  <h2><strong>Add People</strong></h2>
+  <div>
+  <input type="text" name="search" placeholder="Search..">
+  </div>
+  <div class="table-responsive">
+      
   <table class="table table-hover">
     <thead>
       <tr>
         <th>Firstname</th>
         <th>Lastname</th>
-        <th>Email</th>
+        <th>Employee ID</th>
       </tr>
     </thead>
     <tbody>
       <tr>
        <td><input type="checkbox">John</td>
         <td>Doe</td>
-        <td>john@example.com</td>
+        <td>5215698</td>
       </tr>
       <tr>
         <td><input type="checkbox">Mary</td>
         <td>Moe</td>
-        <td>mary@example.com</td>
+        <td>4859528</td>
       </tr>
       <tr>
         <td><input type="checkbox">July</td>
         <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>2865987</td>
       </tr>
     </tbody>
   </table>
+</div>
 </div>
 <div>
     <a href="ant.html"><button>Remove Selected Participants</button></a>
@@ -193,4 +209,5 @@
   </div>
 
 </body>
+
 </html>
