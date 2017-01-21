@@ -24,12 +24,14 @@
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: Convergence, sans-serif;
+      top: 0;
+    
   }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
+  .navbar-nav li a:hover, .navbar-nav .active a {
       color: #5D5776 !important;
       background-color: #fff !important;
   }
@@ -37,6 +39,11 @@
       border-color: transparent;
       color: #fff !important;
   }
+  .navbar-brand {
+    width: 150px;
+    height: auto;
+    top:0;
+    }
     .input[type=text] {
     width: 130px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -59,15 +66,21 @@ input[type=text]:focus {
   
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
 >
-    <nav class="navbar navbar-default navbar-fixed-top">
+     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
+      <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2kbiYX1" class="img-responsive"/>
+        
+        </a>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">Connects</a>
+     <!-- <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2iKgbUk" class="img-responsive"/>
+        </a> -->
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -82,7 +95,7 @@ input[type=text]:focus {
       </ul>
     </div>
   </div>
-</nav><br><br>
+</nav><br><br><br>
     
     <h1><strong>Edit Challenges</strong></h1>
 <!--    
