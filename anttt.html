@@ -1,87 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-                </head>
-<body>
+     <meta charset="utf-8"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <style>
+    body { 
+        background-image: url("http://bit.ly/2k9v8M5");
+       color: white;
+    }
+         
+    .h1{
+        font-family:sans-serif;
+    }
+             
+             .navbar {
+      margin-bottom: 0;
+      background-color: #aa1133;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Convergence, sans-serif;
+      top: 0;
     
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav .active a {
+      color: #5D5776 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  .navbar-brand {
+    width: 150px;
+    height: auto;
+    top:0;
+    }
+    .input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}     
+   table{
+       font-weight: bold;
+   }
+   
+    </style>
+         
+     
+         
+  </head>
+  
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+>
+     <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2kbiYX1" class="img-responsive"/>
+        
+        </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     <!-- <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2iKgbUk" class="img-responsive"/>
+        </a> -->
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#About">About</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Profile">Profile</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/ant.html">Challenges</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Leaderboard">Leaderboard</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#BV">BV</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Gallery">Gallery</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Locations">Locations</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br><br>
+    
+    <h1><strong>Create Challenge</strong></h1>
+<!--    
      <canvas id="myCanvas" width="600" height="100">
 
 <script>
      var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-        ctx.font = "30px Arial";
-        ctx.strokeText("Create Challenge",10,50);
+        ctx.font = "30px sans-serif";
+        ctx.strokeText("Edit Challenge",10,50);
   </script>
-      </canvas>
+      </canvas> -->
+      
+      
       
      <div class="container">
       <form>
     <div class="col-xs-4">
-      <label for="usr">Challenge Name:</label>
-      <input type="text" class="form-control" id="text" placeholder="Name">
+     <div> <strong>Challenge Name:</strong>
+  <input type="disabled" name="name" placeholder="name">
     </div>
     <div class="col-xs-4">
-      <label for="Challenge">Challenge Type:</label>
-      <input type="text" class="form-control" id="text" placeholder="Name">
+      <form></div>
+    <div><strong>
+  Challenge Type:</strong><br>
+  <input type="disabled" name="type" placeholder="Type"><br>
+</form><br></div>
+      </div>
       </div>
    
    <div class="container">  
 <form action="action_page.php">
-<input type="Date" name="Date" value="number">From
+<input type="Date" name="Date" value="number"><strong>From</strong>
 <br>
-<input type="Date" name="Date" value="number">To 
+<input type="Date" name="Date" value="number"><strong>To</strong>
 <br><br>
-<input type="submit">
+
 </form> 
 </div>
 
+    <div class="container"> 
+    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Private
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Public</a></li>
+    <li><a href="#">Private</a></li>
+   
+  </ul>
+</div>
+    
+    </div> 
+
+
 
  <div class="container">
-  <h2>Add People</h2>
+  <h2><strong>Add People</strong></h2>
+  <div>
+  <input type="text" name="search" placeholder="Search..">
+  </div>
+  <div class="table-responsive">
+      
   <table class="table table-hover">
     <thead>
       <tr>
         <th>Firstname</th>
         <th>Lastname</th>
-        <th>Email</th>
+        <th>Employee ID</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
+       <td><input type="checkbox">John</td>
         <td>Doe</td>
-        <td>john@example.com</td>
+        <td>5215698</td>
       </tr>
       <tr>
-        <td>Mary</td>
+        <td><input type="checkbox">Mary</td>
         <td>Moe</td>
-        <td>mary@example.com</td>
+        <td>4859528</td>
       </tr>
       <tr>
-        <td>July</td>
+        <td><input type="checkbox">July</td>
         <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>2865987</td>
       </tr>
     </tbody>
   </table>
 </div>
+</div>
+<div>
+    <a href="ant.html"><button>Remove Selected Participants</button></a>
+</div><br>
 
-
- <div class="container">
-          <a href="ant.html"><button>Back</button></a>
-           <a href=""><button>Next</button></a>
-            </div>
+ 
   
   <div class="container">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Goal</button>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
     <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -91,12 +203,12 @@
           <h4 class="modal-title">Goal Header</h4>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" id="text" placeholder="Text">
+          <input type="text" class="form-control" id="text" placeholder="Goal">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
           <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" value="Input Button" onclick="location.href = 'https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io';"></a> Save</button>
           </div>
         </div>
         </div>
@@ -106,8 +218,9 @@
          <div class="container">
   <h2>Alert</h2>
     <div class="alert alert-success">
-    <strong>Success!</strong> You created a challenge <a href="#" class="alert-link">and your invites went out</a>.
+    <strong>Success!</strong> You've Created a challenge <a href="#" class="alert-link">and your invites went out</a>.
   </div>
 
 </body>
+
 </html>
