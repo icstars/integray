@@ -23,12 +23,17 @@ module.exports = function() {
     });
   });
   
+  
    router.post('/trains/data', function(req,res){
     database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
       res.send(results);
     });
-
-
+   });
+  
+   router.post('uploads/', function(req,res){
+    database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
+      res.send(results);
+    });
     });
   router.post('/connect', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
