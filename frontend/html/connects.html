@@ -12,6 +12,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+      background-image: url("https://postimg.org/image/kgl2d7p4x/");
+  }
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -34,16 +41,7 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
-  .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-      background-image: url("https://postimg.org/image/kgl2d7p4x/");
-      
-
-      
-  }
+ 
   .container-fluid {
       padding: 60px 50px;
       
@@ -183,7 +181,7 @@
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 1028px) {
+  @media screen and (max-width: 828px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -222,6 +220,7 @@
         <li><a href="#BV">BV</a></li>
         <li><a href="#Gallery">Gallery</a></li>
         <li><a href="#Locations">Locations</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/index.html">Sign out</a></li>
       </ul>
     </div>
   </div>
@@ -467,133 +466,83 @@
 </div>
 
 <!-- Leaderboard(group) -->
-          <h2 class="sub-header">Leaderboard Table</h2>
+          <h2 class="sub-header">Leaderboard</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>EmployeeID</th>
-                  <th>E.Name</th>
-                  <th>C.Name</th>
+                  <th>F.Name</th>
+                  <th>L.Name</th>
                   <th>Points</th>
-                  <th>Header</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1,001</td>
                   <td>Lorem</td>
                   <td>ipsum</td>
                   <td>dolor</td>
-                  <td>sit</td>
                 </tr>
                 <tr>
-                  <td>1,002</td>
                   <td>amet</td>
                   <td>consectetur</td>
                   <td>adipiscing</td>
-                  <td>elit</td>
                 </tr>
                 <tr>
-                  <td>1,003</td>
                   <td>Integer</td>
                   <td>nec</td>
                   <td>odio</td>
-                  <td>Praesent</td>
                 </tr>
                 <tr>
-                  <td>1,003</td>
                   <td>libero</td>
                   <td>Sed</td>
                   <td>cursus</td>
-                  <td>ante</td>
                 </tr>
                 <tr>
-                  <td>1,004</td>
                   <td>dapibus</td>
                   <td>diam</td>
                   <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
                 </tr>
               </tbody>
             </table>
+          <h2 class="sub-header">Loserboard</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>F.Name</th>
+                  <th>L.Name</th>
+                  <th>Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                </tr>
+                <tr>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                </tr>
+                <tr>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                </tr>
+                <tr>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                </tr>
+                <tr>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
           </div>
         </div>
       </div>
@@ -637,6 +586,12 @@
         </div>
         <div>
 <<<<<<< HEAD
+          <form action="uploads.php" method="post" enctype="multipart/form-data" >
+    <input type="file" name="image" id="fileToUpload/>
+    <input type="text" name="dob" value="Caption" />
+    <input type="submit" name="submit" value="Upload Image" />
+=======
+<<<<<<< HEAD
           <form action="action.php" method="post" enctype="multipart/form-data" >
     <input type="file" name="image" />
     <input type="submit" name="submit" value="submit" />
@@ -646,6 +601,7 @@
     <input type="text" name="dob" value="Caption" />
     <input type="submit" name="submit" value="UploadImage" />
 >>>>>>> a35d2a3105ba34be1f064c067a52953cc3919d36
+>>>>>>> 9ff85b6173fd80edd7cd7913ff4485a5b108468f
 </form>
         </div>
         <div class="row">
