@@ -12,6 +12,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
+   #BV { 
+      background-image: url("http://bit.ly/2k9v8M5");
+     }
+  
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -24,6 +28,7 @@
       line-height: 1.8;
       color: white;
       background-image: url("http://bit.ly/2k9v8M5");
+ 
   }
   h2 {
       font-size: 24px;
@@ -162,6 +167,7 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -285,7 +291,7 @@
           <div id="Profile">
             <h2 class="sub-header">Profile</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid">
               <thead>
                 <tr>
                   <th>Employee Name</th>
@@ -467,9 +473,9 @@
 </div>
 
 <!-- Leaderboard(group) -->
-          <h2 class="sub-header">Leaderboard</h2>
+          <h2 class="sub-header" id="tbody">Leaderboard</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid" id="lb">
               <thead>
                 <tr>
                   <th>F.Name</th>
@@ -507,7 +513,7 @@
             </table>
           <h2 class="sub-header">Loserboard</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid" >
               <thead>
                 <tr>
                   <th>F.Name</th>
