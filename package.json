@@ -1,26 +1,25 @@
 {
-  "name": "c37",
-  "version": "1.0.0",
-  "description": "Seed project for cycle 37",
-  "main": "app.js",
+  "name": "leaderboards",
+  "version": "0.1.0",
+  "description": "A node.js module that creates a leaderboard server based on express.js and MongoDB. It accepts new scores and delivers leaderboards in JSON format via HTTP.",
+  "main": "leaderboards.js",
   "scripts": {
-    "start" : "node backend/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icstars/c37.git"
+    "url": "https://github.com/belici/leaderboards.git"
   },
-  "author": "",
+  "keywords": [
+    "leaderboard",
+    "highscore",
+    "score"
+  ],
+  "author": "belici <belici.apps@gmail.com> (http://www.grillberger.de/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/icstars/c37/issues"
-  },
-  "homepage": "https://github.com/icstars/c37#readme",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "lodash": "^4.6.1",
-    "pg": "^4.4.4"
-  }
+  "dependencies" :
+  {
+	"express" : ">=3.5.1",
+	"mongoose" : ">=3.8.14"
+  }  
 }

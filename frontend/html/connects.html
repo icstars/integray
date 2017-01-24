@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -117,7 +118,7 @@
   .panel-footer h3 {
       font-size: 32px;
   }
-  .panel-footer h4 {
+  .panel-footer  {
       color: #aaa;
       font-size: 14px;
   }
@@ -135,7 +136,7 @@
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: Convergence, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
@@ -147,6 +148,14 @@
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
+  }
+  .navbar-brand {
+    width: 150px;
+    height: auto;
+    top:0;
+    }
+  #myNavbar{
+    float:inherit;
   }
   footer .glyphicon {
       font-size: 20px;
@@ -181,7 +190,7 @@
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 828px) {
+  @media screen and (max-width: 1028px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -208,7 +217,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Connects</a>
+      <a class="navbar-brand" href="#myPage"><img src="http://bit.ly/2kbiYX1" class="img-responsive"/></a>
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -635,23 +644,10 @@
           </div>
         </div>
         <div>
-<<<<<<< HEAD
-          <form action="uploads.php" method="post" enctype="multipart/form-data" >
-    <input type="file" name="image" id="fileToUpload/>
-    <input type="text" name="dob" value="Caption" />
-    <input type="submit" name="submit" value="Upload Image" />
-=======
-<<<<<<< HEAD
-          <form action="action.php" method="post" enctype="multipart/form-data" >
-    <input type="file" name="image" />
-    <input type="submit" name="submit" value="submit" />
-=======
-          <form action="upload.php" method="post" enctype="multipart/form-data" >
+          <form action="/frontend/html/uploads.php" method="post" enctype="multipart/form-data" >
     <input type="file" name="image" id="fileToUpload/>
     <input type="text" name="dob" value="Caption" />
     <input type="submit" name="submit" value="UploadImage" />
->>>>>>> a35d2a3105ba34be1f064c067a52953cc3919d36
->>>>>>> 9ff85b6173fd80edd7cd7913ff4485a5b108468f
 </form>
         </div>
         <div class="row">

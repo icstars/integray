@@ -21,4 +21,4 @@ insert into trains (trainNumber, lineColor, inService) values (534, 'brownline',
 insert into trains (trainNumber, lineColor, inService) values (444, 'brownline', true);
 insert into trains (trainNumber, lineColor, inService) values (552, 'brownline', true);
 insert into trains (trainNumber, lineColor, inService) values (049, 'brownline', true);
-insert into trains (trainNumber, linecolor, inservice) values (340, redline, true);
+insert into trains (trainNumber, linecolor, inservice) values (340, 'redline', true);

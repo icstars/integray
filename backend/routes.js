@@ -30,12 +30,12 @@ module.exports = function() {
     });
    });
   
-   router.post('uploads/', function(req,res){
-    database.executeQuery("insert into trains(trainNumber, linecolor, inservice)", function(results) {
+   router.post('/challenges', function(req,res){
+    database.executeQuery("insert into challenges(name, type, incentive, goal, maxpoints, start date, end date)", function(results) {
       res.send(results);
     });
     });
-  router.post('/connect', function(req,res){
+  router.post('/uploads.php', function(req,res){
     database.executeQuery("insert into contest(contest, linecolor, inservice)", function(results) {
       res.send(results);
     });
