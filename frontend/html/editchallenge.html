@@ -50,14 +50,108 @@
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-
+#see{
+  color:black;
+}
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
     width: 100%;
-}     
+} 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #669944;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
    table{
        font-weight: bold;
    }
+ @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 828px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
    
     </style>
          
@@ -113,6 +207,7 @@ input[type=text]:focus {
       
       
      <div class="container">
+       <div class="row">
       <form>
     <div class="col-xs-4">
      <div> <strong>Challenge Name:</strong>
@@ -126,12 +221,12 @@ input[type=text]:focus {
 </form><br></div>
       </div>
       </div>
-   
+   </div>
    <div class="container">  
 <form action="action_page.php">
-<input type="int" name="Date" value="01/27/2017"><strong>From</strong>
+<input id="see" type="int" name="Date" value="01/27/2017"><strong>From</strong>
 <br>
-<input type="int" name="Date" value="02/27/2017"><strong>To</strong> 
+<input id="see" type="int" name="Date" value="02/27/2017"><strong>To</strong> 
 <br><br>
 
 </form> 
@@ -155,7 +250,7 @@ input[type=text]:focus {
  <div class="container">
   <h2><strong>Add People</strong></h2>
   <div>
-  <input type="text" name="search" placeholder="Search..">
+  <input id="see" type="text" name="search" placeholder="Search..">
   </div>
   <div class="table-responsive">
       
@@ -169,18 +264,18 @@ input[type=text]:focus {
     </thead>
     <tbody>
       <tr>
-       <td><input type="checkbox">John</td>
-        <td>Doe</td>
+       <td><input type="checkbox">Akia</td>
+        <td>Young</td>
         <td>5215698</td>
       </tr>
       <tr>
-        <td><input type="checkbox">Mary</td>
-        <td>Moe</td>
+        <td><input type="checkbox">Julian</td>
+        <td>Damian</td>
         <td>4859528</td>
       </tr>
       <tr>
-        <td><input type="checkbox">July</td>
-        <td>Dooley</td>
+        <td><input type="checkbox">Harvey</td>
+        <td>Pierson</td>
         <td>2865987</td>
       </tr>
     </tbody>
@@ -190,6 +285,18 @@ input[type=text]:focus {
 <div>
     <a href="ant.html"><button>Remove Selected Participants</button></a>
 </div><br>
+<div class="container">
+  <div class="col-col-xs-4">Inactive&nbsp;&nbsp;<label class="switch">
+  <input type="checkbox">
+  <div class="slider round" id="toggle"></div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Active</p>
+</div>
+</div>
+</div><br><br>
+
+
+
+
 
  
   

@@ -13,6 +13,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
+   #BV { 
+      background-image: url("http://bit.ly/2k9v8M5");
+     }
+  
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -25,16 +29,19 @@
       line-height: 1.8;
       color: white;
       background-image: url("http://bit.ly/2k9v8M5");
+ 
   }
   h2 {
-      font-size: 24px;
+      font-size: 24px !important;
       text-transform: uppercase;
       color: white;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 30px!important;
       border-style: solid;
       border-width: thin;
       border-color: #FFFFFF;
+      background-color: #aa1133;
+      background-image: url("https://s-media-cache-ak0.pinimg.com/736x/f9/b9/5b/f9b95bcb47938773007c740ae3eaf877.jpg")
   }
   h4 {
       font-size: 19px;
@@ -42,6 +49,7 @@
       color: white;
       font-weight: 400;
       margin-bottom: 30px;
+      font-weight: bold;
   }  
  
   .container-fluid {
@@ -64,6 +72,8 @@
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
+      background-color:transparent;
+      
   }
   .thumbnail img {
       width: 100%;
@@ -138,6 +148,7 @@
       letter-spacing: 4px;
       border-radius: 0;
       font-family: Convergence, sans-serif;
+      background-image:url(https://s-media-cache-ak0.pinimg.com/736x/f9/b9/5b/f9b95bcb47938773007c740ae3eaf877.jpg);
   }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
@@ -149,8 +160,8 @@
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
-  }
-  .navbar-brand {
+    }
+   .navbar-brand {
     width: 150px;
     height: auto;
     top:0;
@@ -171,6 +182,7 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -218,7 +230,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="http://bit.ly/2kbiYX1" class="img-responsive"/></a>
+      <a class="navbar-brand" href="#myPage">
+        <img src="http://bit.ly/2kbiYX1" class="img-responsive"/>
+      </a>
+
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -257,7 +272,7 @@
 
 
 
-<div class="jumbotron text-center" style="background-image:url(http://il6.picdn.net/shutterstock/videos/12013151/thumb/1.jpg);">
+<div class="jumbotron text-center" style="background-image:url(http://68.media.tumblr.com/13d38a26b7832a12dde36a9d201ff944/tumblr_inline_nx7tg1Y25d1sp8vp8_500.gif);">
 <div class="imgwrapper">
 <img src="https://s24.postimg.org/pf8krqsxx/Accenture_connets_Logo_Clear.png" class="img-responsive">
 
@@ -295,7 +310,7 @@
           <div id="Profile">
             <h2 class="sub-header">Profile</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid" img src="https://s-media-cache-ak0.pinimg.com/736x/f9/b9/5b/f9b95bcb47938773007c740ae3eaf877.jpg">
               <thead>
                 <tr>
                   <th>Employee Name</th>
@@ -454,13 +469,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"That challenge was the best. I am so happy with the result!"<br><span style="font-style:normal;"> John Doe, BA, Chicago office</span></h4>
+        <h4>"I am crushing this Bookworm challenge! You're all going down."<br><span style="font-style:normal;"> Greg Antoine, BA & Dev, Chicago office</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Dev, NY office</span></h4>
+        <h4>"Two words...Love it!!"<br><span style="font-style:normal;">Michelle Patlan, QA, NY office</span></h4>
       </div>
       <div class="item">
-        <h4>"Rich that was a lucky one I was right behind you!"<br><span style="font-style:normal;">Matt Neal, Project Owner, Chicago office </span></h4>
+        <h4>"Rich, that was a lucky one you were right behind me!"<br><span style="font-style:normal;">Matt Neal, Project Owner, Chicago office </span></h4>
       </div>
     </div>
 
@@ -477,9 +492,9 @@
 </div>
 
 <!-- Leaderboard(group) -->
-          <h2 class="sub-header">Leaderboard</h2>
+          <h2 class="sub-header" id="tbody">&nbsp;&nbsp;Leader board</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid" id="lb">
               <thead>
                 <tr>
                   <th>F.Name</th>
@@ -515,9 +530,9 @@
                 </tr>
               </tbody>
             </table>
-          <h2 class="sub-header">Loserboard</h2>
+          <h2 class="sub-header">&nbsp;&nbsp;Loser board</h2>
           <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-solid" >
               <thead>
                 <tr>
                   <th>F.Name</th>
@@ -563,7 +578,7 @@
 <!-- Container (Portfolio Section) -->
 <div id="BV" class="container-fluid text-center bg-grey">
   <h2>BV</h2><br>
-  <h4>Badges</h4>
+  <h4>Badge Vault</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
@@ -634,9 +649,10 @@
 
   
 <div id="Locations">
-<div id="map" style="height:500px;width:100%;"></div>
+<div id="map" style="height:200px;width:100%;"></div>
 
 <!-- Add Google Maps -->
+<script>
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
