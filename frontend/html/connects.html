@@ -222,7 +222,7 @@
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right pull-right">
         <li><a href="#About">About</a></li>
         <li><a href="#Profile">Profile</a></li>
         <li><a href="https://preview.c9users.io/greg24/intergray/ant.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io">Challenges</a></li>
@@ -591,17 +591,21 @@
        <div id="Gallery">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-lg-12">
             <h2>Gallery</h2>
-          </div>
+            <div class="row">
+              <div class="col-sm-4">
+            <div id="imagesData">
+               <form action="/images" method="post" enctype="multipart/form-data">
+                  <input type="file" name="Upload"> 
+                  <input type="submit" name="submit"value="Upload Image"/>
+                 </form>
+            </div>
+         </div>
         </div>
-        <div>
-          <form action="uploads.php" method="post" enctype="multipart/form-data" >
-    <input type="file" name="image" id="fileToUpload/>
-    <input type="text" name="dob" value="Caption" />
-    <input type="submit" name="submit" value="Upload Image"/>
-          </form>
-        </div>
+       </div>
+      </div>
+        
         <div class="row">
           <div class="col-md-4">
             <a><img src="http://previews.123rf.com/images/pressmaster/pressmaster1006/pressmaster100600510/7261517-Row-of-business-people-getting-ready-for-race-Stock-Photo-competition.jpg" class="img-responsive"></a>
@@ -630,33 +634,46 @@
 
   
 <div id="Locations">
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<div id="map" style="height:500px;width:100%;"></div>
 
 <!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.884780, -87.630609);
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
 
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Found you!');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
 
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNou3TOIKchd3p2nE6qprDmMTWIIvT9IM&callback=initMap">
+    </script>
 
 <script>
 $(document).ready(function(){
