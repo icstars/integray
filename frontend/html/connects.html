@@ -51,6 +51,9 @@
       margin-bottom: 30px;
       font-weight: bold;
   }  
+  #see{
+    color: black;
+  }
  
   .container-fluid {
       padding: 60px 50px;
@@ -165,6 +168,9 @@
     width: 150px;
     height: auto;
     top:0;
+    }
+    a #linked : active {
+     color: white; 
     }
   #myNavbar{
     float:inherit;
@@ -314,7 +320,7 @@
               <thead>
                 <tr>
                   <th>Employee Name</th>
-                  <th>John Doe
+                  <th>Greg Antoine
                 </tr>
               </thead>
               <tbody>
@@ -504,7 +510,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Dami</td>
+                  <td><a id="linked" href="profile.html">Dami</a></td>
                   <td>Oyeyipo</td>
                   <td>100</td>
                 </tr>
@@ -519,13 +525,13 @@
                   <td>100</td>
                 </tr>
                 <tr>
-                  <td>Tania</td>
-                  <td>Olivares</td>
+                  <td>Matt</td>
+                  <td>Neal</td>
                   <td>75</td>
                 </tr>
                 <tr>
-                  <td>Akia</td>
-                  <td>Young</td>
+                  <td>Tania</td>
+                  <td>Olivares</td>
                   <td>50</td>
                 </tr>
               </tbody>
@@ -612,8 +618,8 @@
               <div class="col-sm-4">
             <div id="imagesData">
                <form action="/images" method="post" enctype="multipart/form-data">
-                  <input type="file" name="Upload"> 
-                  <input type="submit" name="submit"value="Upload Image"/>
+                  <input id="see" type="file" name="Upload"> 
+                  <input id="see" type="submit" name="submit"value="Upload Image"/>
                  </form>
             </div>
          </div>
@@ -649,14 +655,14 @@
 
   
 <div id="Locations">
-<div id="map" style="height:200px;width:100%;"></div>
+<div id="map" style="height:500px;width:100%;color:black;"></div>
 
 <!-- Add Google Maps -->
 <script>
 function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 6
+          zoom: 10
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 

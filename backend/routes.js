@@ -19,16 +19,27 @@ module.exports = function() {
  router.get('/connects', function(req,res){
     return res.render('connects.html');
   });
+  router.get('/connects#About', function(req,res){
+    return res.render('connects.html#About');
+  });router.get('/connects#Leaderboard', function(req,res){
+    return res.render('connects.html#Leaderboard');
+  });router.get('/connects#Locations', function(req,res){
+    return res.render('connects.html#Locations');
+  });router.get('/connects#Profile', function(req,res){
+    return res.render('connects.html#Profile');
+  });
   
   router.get('/challenge', function(req,res){
     return res.sender('ant.html');
   });
-  
+  router.get('/exist', function(req,res){
+    return res.render('antt.html');
+  });
   router.get('/editchallenge', function(req,res){
     return res.sender('editchallenge.html');
   });
   router.get('/connects#Gallery', function (req,res){
-    return res.sender('connects.html#imagesData');
+    return res.sender('connects.html#Gallery');
   });
   
    router.get('/uploads', function(req,res){

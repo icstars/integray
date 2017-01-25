@@ -15,7 +15,9 @@
     .h1{
         font-family:sans-serif;
     }
-             
+       #see{
+           color:black;
+       }      
              .navbar {
       margin-bottom: 0;
       background-color: #aa1133;
@@ -114,25 +116,26 @@ input[type=text]:focus {
       
       
      <div class="container">
+         <div class="row">
       <form>
     <div class="col-xs-4">
-     <div> <strong>Challenge Name:</strong>
-  <input type="disabled" name="name" placeholder="name">
+     <div> <strong> Challenge Name:</strong>
+  <input type="disabled" name="name" placeholder="Name">
     </div>
     <div class="col-xs-4">
       <form></div>
     <div><strong>
   Challenge Type:</strong><br>
-  <input type="disabled" name="type" placeholder="Type"><br>
+  <input type="disabled" name="type" placeholder="Tags"><br>
 </form><br></div>
       </div>
       </div>
-   
+   <BR>
    <div class="container">  
 <form action="action_page.php">
-<input type="Date" name="Date" value="number"><strong>From</strong>
+<input id="see" type="Date" name="Date" value="number"><strong>From</strong>
 <br>
-<input type="Date" name="Date" value="number"><strong>To</strong>
+<input id="see" type="Date" name="Date" value="number"><strong>To</strong>
 <br><br>
 
 </form> 
