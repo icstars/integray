@@ -3,6 +3,7 @@
   <head>
      <meta charset="utf-8"> 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
@@ -233,13 +234,10 @@ input:checked + .slider:before {
 
     <div class="container"> 
     <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Private
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Public</a></li>
-    <li><a href="#">Private</a></li>
-   
-  </ul>
+    <select id="see">
+      <option>Public</option>
+      <option><a href="#">Private</a></option>
+  </select>
 </div>
     
     </div> 
@@ -310,7 +308,7 @@ input:checked + .slider:before {
           <h4 class="modal-title">Goal Header</h4>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" id="text" placeholder="Goal">
+          <input type="text" class="form-control" id="text" placeholder="Read 10 books by end of challenge">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>

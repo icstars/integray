@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -50,6 +51,9 @@
       margin-bottom: 30px;
       font-weight: bold;
   }  
+  #see{
+    color: black;
+  }
  
   .container-fluid {
       padding: 60px 50px;
@@ -128,7 +132,7 @@
   .panel-footer h3 {
       font-size: 32px;
   }
-  .panel-footer h4 {
+  .panel-footer  {
       color: #aaa;
       font-size: 14px;
   }
@@ -146,7 +150,7 @@
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: Convergence, sans-serif;
       background-image:url(https://s-media-cache-ak0.pinimg.com/736x/f9/b9/5b/f9b95bcb47938773007c740ae3eaf877.jpg);
   }
   .navbar li a, .navbar .navbar-brand {
@@ -165,7 +169,12 @@
     height: auto;
     top:0;
     }
-    
+    a #linked : active {
+     color: white; 
+    }
+  #myNavbar{
+    float:inherit;
+  }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -200,7 +209,7 @@
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 828px) {
+  @media screen and (max-width: 1028px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -230,10 +239,11 @@
       <a class="navbar-brand" href="#myPage">
         <img src="http://bit.ly/2kbiYX1" class="img-responsive"/>
       </a>
+
     </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right pull-right">
         <li><a href="#About">About</a></li>
         <li><a href="#Profile">Profile</a></li>
         <li><a href="https://preview.c9users.io/greg24/intergray/ant.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io">Challenges</a></li>
@@ -310,7 +320,7 @@
               <thead>
                 <tr>
                   <th>Employee Name</th>
-                  <th>John Doe
+                  <th>Greg Antoine
                 </tr>
               </thead>
               <tbody>
@@ -320,7 +330,7 @@
                 </tr>
                 <tr>
                   <td>Job Title</td>
-                  <td>BA</td>
+                  <td>Developer</td>
                 </tr>
                 <tr>
                   <td>Points</td>
@@ -465,13 +475,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"That challenge was the best. I am so happy with the result!"<br><span style="font-style:normal;"> John Doe, BA, Chicago office</span></h4>
+        <h4>"I am crushing this Bookworm challenge! You're all going down."<br><span style="font-style:normal;"> Greg Antoine, BA & Dev, Chicago office</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Dev, NY office</span></h4>
+        <h4>"Two words...Love it!!"<br><span style="font-style:normal;">Michelle Patlan, QA, NY office</span></h4>
       </div>
       <div class="item">
-        <h4>"Rich that was a lucky one I was right behind you!"<br><span style="font-style:normal;">Matt Neal, Project Owner, Chicago office </span></h4>
+        <h4>"Rich, that was a lucky one you were right behind me!"<br><span style="font-style:normal;">Matt Neal, Project Owner, Chicago office </span></h4>
       </div>
     </div>
 
@@ -500,7 +510,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Dami</td>
+                  <td><a id="linked" href="profile.html">Dami</a></td>
                   <td>Oyeyipo</td>
                   <td>100</td>
                 </tr>
@@ -515,13 +525,13 @@
                   <td>100</td>
                 </tr>
                 <tr>
-                  <td>Tania</td>
-                  <td>Olivares</td>
+                  <td>Matt</td>
+                  <td>Neal</td>
                   <td>75</td>
                 </tr>
                 <tr>
-                  <td>Akia</td>
-                  <td>Young</td>
+                  <td>Tania</td>
+                  <td>Olivares</td>
                   <td>50</td>
                 </tr>
               </tbody>
@@ -602,17 +612,21 @@
        <div id="Gallery">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-lg-12">
             <h2>Gallery</h2>
-          </div>
+            <div class="row">
+              <div class="col-sm-4">
+            <div id="imagesData">
+               <form action="/images" method="post" enctype="multipart/form-data">
+                  <input id="see" type="file" name="Upload"> 
+                  <input id="see" type="submit" name="submit"value="Upload Image"/>
+                 </form>
+            </div>
+         </div>
         </div>
-        <div>
-          <form action="uploads.php" method="post" enctype="multipart/form-data" >
-    <input type="file" name="image" id="fileToUpload/>
-    <input type="text" name="dob" value="Caption" />
-    <input type="submit" name="submit" value="Upload Image"/>
-          </form>
-        </div>
+       </div>
+      </div>
+        
         <div class="row">
           <div class="col-md-4">
             <a><img src="http://previews.123rf.com/images/pressmaster/pressmaster1006/pressmaster100600510/7261517-Row-of-business-people-getting-ready-for-race-Stock-Photo-competition.jpg" class="img-responsive"></a>
@@ -641,33 +655,47 @@
 
   
 <div id="Locations">
-<div id="googleMap" style="height:400px;width:100%;"></div>
+<div id="map" style="height:500px;width:100%;color:black;"></div>
 
 <!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-var myCenter = new google.maps.LatLng(41.884780, -87.630609);
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 10
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
 
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Found you!');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
 
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNou3TOIKchd3p2nE6qprDmMTWIIvT9IM&callback=initMap">
+    </script>
 
 <script>
 $(document).ready(function(){

@@ -3,6 +3,7 @@
   <head>
      <meta charset="utf-8"> 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
@@ -14,7 +15,9 @@
     .h1{
         font-family:sans-serif;
     }
-             
+       #see{
+           color:black;
+       }      
              .navbar {
       margin-bottom: 0;
       background-color: #aa1133;
@@ -113,25 +116,26 @@ input[type=text]:focus {
       
       
      <div class="container">
+         <div class="row">
       <form>
     <div class="col-xs-4">
-     <div> <strong>Challenge Name:</strong>
-  <input type="disabled" name="name" placeholder="name">
+     <div> <strong> Challenge Name:</strong>
+  <input type="disabled" name="name" placeholder="Name">
     </div>
     <div class="col-xs-4">
       <form></div>
     <div><strong>
   Challenge Type:</strong><br>
-  <input type="disabled" name="type" placeholder="Type"><br>
+  <input type="disabled" name="type" placeholder="Tags"><br>
 </form><br></div>
       </div>
       </div>
-   
+   <BR>
    <div class="container">  
 <form action="action_page.php">
-<input type="Date" name="Date" value="number"><strong>From</strong>
+<input id="see" type="Date" name="Date" value="number"><strong>From</strong>
 <br>
-<input type="Date" name="Date" value="number"><strong>To</strong>
+<input id="see" type="Date" name="Date" value="number"><strong>To</strong>
 <br><br>
 
 </form> 
@@ -141,7 +145,13 @@ input[type=text]:focus {
     <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Private
   <span class="caret"></span></button>
+  <select id="see">
+      <option>Public</option>
+      <option><a href="#">Private</a></option>
+  </select>
+  </button>
   <ul class="dropdown-menu">
+
     <li><a href="#">Public</a></li>
     <li><a href="#">Private</a></li>
    
@@ -155,7 +165,7 @@ input[type=text]:focus {
  <div class="container">
   <h2><strong>Add People</strong></h2>
   <div>
-  <input type="text" name="search" placeholder="Search..">
+  <input id="see"type="text" name="search" placeholder="Search..">
   </div>
   <div class="table-responsive">
       
@@ -188,7 +198,7 @@ input[type=text]:focus {
 </div>
 </div>
 <div>
-    <a href="ant.html"><button>Remove Selected Participants</button></a>
+    <a href="ant.html"><button>Add Selected Participants</button></a>
 </div><br>
 
  

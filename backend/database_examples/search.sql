@@ -1,1 +1,2 @@
-create search text template;
+
+select * from trains;
