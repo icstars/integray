@@ -4,7 +4,7 @@
      <meta charset="utf-8"> 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
     body { 
@@ -114,6 +114,16 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.editable
+        {
+            padding: 2px;
+        }
+.editable:hover
+        {
+            cursor: pointer;
+            background-color: #D9EDF8;
+        }
+
    table{
        font-weight: bold;
    }
@@ -154,13 +164,45 @@ input:checked + .slider:before {
   }
    
     </style>
-         
-     
-         
-  </head>
+       
+    </head>
   
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
->
+<script type="text/javascript">
+        $(function () {
+            //Loop through all Labels with class 'editable'.
+            $(".editable").each(function () {
+                //Reference the Label.
+                var label = $(this);
+
+                //Add a TextBox next to the Label.
+                label.after("<input type = 'text' style = 'display:none' />");
+
+                //Reference the TextBox.
+                var textbox = $(this).next();
+
+                //Set the name attribute of the TextBox.
+                textbox[0].name = this.id.replace("lbl", "txt");
+
+                //Assign the value of Label to TextBox.
+                textbox.val(label.html());
+
+                //When Label is clicked, hide Label and show TextBox.
+                label.click(function () {
+                    $(this).hide();
+                    $(this).next().show();
+                });
+
+                //When focus is lost from TextBox, hide TextBox and show Label.
+                textbox.focusout(function () {
+                    $(this).hide();
+                    $(this).prev().html($(this).val());
+                    $(this).prev().show();
+                });
+            });
+        });
+    </script>
+
      <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -192,7 +234,7 @@ input:checked + .slider:before {
   </div>
 </nav><br><br><br>
     
-    <h1><strong>Edit Challenge</strong></h1>
+    <h1><strong>Edit <span id="lblName" class="editable"> Book Worm </span> Challenge</strong></h1>
 <!--    
      <canvas id="myCanvas" width="600" height="100">
 
@@ -211,13 +253,13 @@ input:checked + .slider:before {
       <form>
     <div class="col-xs-4">
      <div> <strong>Challenge Name:</strong>
-  <input type="disabled" name="name" placeholder="Book Worm">
+  <input id="see" type="disabled" name="name" placeholder="Book Worm">
     </div>
     <div class="col-xs-4">
       <form></div>
     <div><strong>
   Challenge Type:</strong><br>
-  <input type="disabled" name="type" placeholder="#Read #Books #Bookworm"><br>
+  <input id="see" type="disabled" name="type" placeholder="#bookworm"><br>
 </form><br></div>
       </div>
       </div>
@@ -235,16 +277,15 @@ input:checked + .slider:before {
     <div class="container"> 
     <div class="dropdown">
     <select id="see">
+     <option><a href="#">Private</a></option>
       <option>Public</option>
-      <option><a href="#">Private</a></option>
   </select>
 </div>
     
     </div> 
-
-
-
+    
  <div class="container">
+   <div id="add">
   <h2><strong>Add People</strong></h2>
   <div>
   <input id="see" type="text" name="search" placeholder="Search..">
@@ -280,6 +321,8 @@ input:checked + .slider:before {
 </div>
 </div>
 <div>
+  </div>
+    <a href="ant.html"><button>Add Selected Participants</button></a>
     <a href="ant.html"><button>Remove Selected Participants</button></a>
 </div><br>
 <div class="container">
@@ -294,8 +337,6 @@ input:checked + .slider:before {
 
 
 
-
- 
   
   <div class="container">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
