@@ -145,7 +145,13 @@ input[type=text]:focus {
     <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Private
   <span class="caret"></span></button>
+  <select id="see">
+      <option>Public</option>
+      <option><a href="#">Private</a></option>
+  </select>
+  </button>
   <ul class="dropdown-menu">
+
     <li><a href="#">Public</a></li>
     <li><a href="#">Private</a></li>
    
@@ -159,7 +165,7 @@ input[type=text]:focus {
  <div class="container">
   <h2><strong>Add People</strong></h2>
   <div>
-  <input type="text" name="search" placeholder="Search..">
+  <input id="see"type="text" name="search" placeholder="Search..">
   </div>
   <div class="table-responsive">
       
@@ -192,7 +198,7 @@ input[type=text]:focus {
 </div>
 </div>
 <div>
-    <a href="ant.html"><button>Remove Selected Participants</button></a>
+    <a href="ant.html"><button>Add Selected Participants</button></a>
 </div><br>
 
  
