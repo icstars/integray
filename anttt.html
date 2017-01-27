@@ -53,7 +53,15 @@
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-
+.editable
+        {
+            padding: 2px;
+        }
+.editable:hover
+        {
+            cursor: pointer;
+            background-color: #D9EDF8;
+        }
 /* When the input field gets focus, change its width to 100% */
 input[type=text]:focus {
     width: 100%;
@@ -69,7 +77,41 @@ input[type=text]:focus {
   </head>
   
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
->
+    <script type="text/javascript">
+        $(function () {
+            //Loop through all Labels with class 'editable'.
+            $(".editable").each(function () {
+                //Reference the Label.
+                var label = $(this);
+
+                //Add a TextBox next to the Label.
+                label.after("<input type = 'text' style = 'display:none' />");
+
+                //Reference the TextBox.
+                var textbox = $(this).next();
+
+                //Set the name attribute of the TextBox.
+                textbox[0].name = this.id.replace("lbl", "txt");
+
+                //Assign the value of Label to TextBox.
+                textbox.val(label.html());
+
+                //When Label is clicked, hide Label and show TextBox.
+                label.click(function () {
+                    $(this).hide();
+                    $(this).next().show();
+                });
+
+                //When focus is lost from TextBox, hide TextBox and show Label.
+                textbox.focusout(function () {
+                    $(this).hide();
+                    $(this).prev().html($(this).val());
+                    $(this).prev().show();
+                });
+            });
+        });
+    </script>
+
      <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -125,8 +167,8 @@ input[type=text]:focus {
     <div class="col-xs-4">
       <form></div>
     <div><strong>
-  Challenge Type:</strong><br>
-  <input type="disabled" name="type" placeholder="Tags"><br>
+  Challenge #Tag:</strong><br>
+  <input type="disabled" name="tag" placeholder="#tag"><br>
 </form><br></div>
       </div>
       </div>
@@ -151,7 +193,9 @@ input[type=text]:focus {
 </div>
     
     </div> 
-
+<div class="container"> 
+<h4>Goal to Point ratio:<span id="lblName" class="editable">0</span> = 1 point</h4>
+</div>
 
 
  <div class="container">
@@ -171,29 +215,36 @@ input[type=text]:focus {
     </thead>
     <tbody>
       <tr>
-       <td><input type="checkbox">John</td>
-        <td>Doe</td>
-        <td>5215698</td>
+       <td><input type="checkbox" id="myCheck" value="Dami Oyeyipo<br> Michelle Patlan <br> Matt Neal">Dami</td>
+        <td>Oyeyipo</td>
+        <td>5229698</td>
       </tr>
       <tr>
-        <td><input type="checkbox">Mary</td>
-        <td>Moe</td>
-        <td>4859528</td>
+        <td><input type="checkbox">Michelle</td>
+        <td>Patlan</td>
+        <td>4803528</td>
+        
       </tr>
       <tr>
-        <td><input type="checkbox">July</td>
-        <td>Dooley</td>
-        <td>2865987</td>
+        <td><input type="checkbox">Matt</td>
+        <td>Neal</td>
+        <td>2860187</td>
       </tr>
     </tbody>
   </table>
 </div>
 </div>
 <div>
-    <a href="ant.html"><button>Add Selected Participants</button></a>
+    <button id="see" onclick="myFunction()">Add Selected Participants</button>
 </div><br>
+<strong><p id="demo"></p></strong>
 
- 
+ <script>
+function myFunction() {
+    var x = document.getElementById("myCheck").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
   
   <div class="container">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
@@ -206,12 +257,12 @@ input[type=text]:focus {
           <h4 class="modal-title">Goal Header</h4>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" id="text" placeholder="Goal">
+          <input type="text" class="form-control" id="text" placeholder="Your challenge goal here">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
           <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" value="Input Button" onclick="location.href = 'https://preview.c9users.io/greg24/intergray/frontend/html/antedit.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io';"></a> Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" value="Input Button" onclick="location.href = 'https://preview.c9users.io/daoy/integray-group-project/frontend/html/antedit.html';"></a> Save</button>
           </div>
         </div>
         </div>
@@ -221,7 +272,7 @@ input[type=text]:focus {
          <div class="container">
   <h2>Alert</h2>
     <div class="alert alert-success">
-    <strong>Success!</strong> You've Created a challenge <a href="#" class="alert-link">and your invites went out</a>.
+    <strong>Success!</strong> You've created "Bookworm" challenge <a href="#" class="alert-link">and your invites went out</a>.
   </div>
 
 </body>
