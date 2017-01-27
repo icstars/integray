@@ -12,12 +12,16 @@ module.exports = function() {
     return res.render('index.html');
   });
   
-  //trins
+  //trains
   router.get('/trains', function(req,res){
     return res.render('trains.html');
   });
-router.get('/connects', function(req,res){
-    return res.render('connects.html');
+  //navigating through challenges
+router.get('/joinbook', function(req,res){
+    return res.render('joinbook.html');
+  });
+  router.get('/adminedit', function(req,res){
+    return res.render('antedit.html');
   });
   router.get('/connects', function(req,res){
     return res.render('connects.html');
@@ -25,8 +29,14 @@ router.get('/connects', function(req,res){
   router.get('/connects', function(req,res){
     return res.render('connects.html');
   });
-  router.get('/connects', function(req,res){
-    return res.render('connects.html');
+   router.get('/challenge', function(req,res){
+    return res.sender('ant.html');
+  });
+  router.get('/userjoin', function(req,res){
+    return res.render('/anttt.html');
+  });
+  router.get('/editbookworm', function(req,res){
+    return res.sender('editchallenge.html');
   });
   
   //navigate home page w greg as user
@@ -46,17 +56,7 @@ router.get('/connects', function(req,res){
     return res.render('connects.html#Profile');
   });
   
-  router.get('/challenge', function(req,res){
-    return res.sender('ant.html');
-  });
-  router.get('/userjoin', function(req,res){
-    return res.render('/anttt.html');
-  });
-  router.get('/editbookworm', function(req,res){
-    return res.sender('editchallenge.html');
-  });
-  
-  //gallery stuff
+   //gallery stuff
   router.get('/connects#Gallery', function (req,res){
     return res.sender('connects.html#Gallery');
   });
