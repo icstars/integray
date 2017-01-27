@@ -252,15 +252,20 @@ input:checked + .slider:before {
   <input id="see" type="disabled" name="name" placeholder="Book Worm">
     </div> -->
     
-    <div class="col-xs-4">
-      <form></div>
-    <div><strong>
-  Challenge #Tag:</strong><br>
-  <input id="see" type="disabled" name="type" placeholder="#bookworm"><br>
-</form><br></div>
+    <div class="container">
+         <div class="row">
+      <div class="col-xs-4">
+    <form>
+     <div><strong>
+  Challenge #Tag:</strong>
+  <input id="see" type="disabled" name="tag" placeholder="#bookworm"><br>
+    </form>
+<br>
+</div>
       </div>
+      </div> 
       </div>
-   </div>
+   <br>    
    <div class="container">  
 <form action="action_page.php">
 <input id="see" type="int" name="Date" value="01/27/2017"><strong>From</strong>
@@ -278,9 +283,22 @@ input:checked + .slider:before {
       <option>Public</option>
   </select>
 </div>
-    
-    </div> 
-    
+    </div>
+    <BR>
+    <div class="container"> 
+<strong><h4>Goal to Point ratio:<span id="lblName" class="editable">100 pages</span> = 1 point</h4></strong>
+</div>
+<BR>
+     <div class="container"> 
+    <div class="dropdown">
+        <h4>Participants check in:
+    <select id="see">
+      <option>Daily</a></option>
+      <option>Weekly</option>
+      <option>Bi-monthly</option>
+      <option>Monthly</option>
+  </select>
+  
  <div class="container">
    <div id="add">
   <h2><strong>Add People</strong></h2>
@@ -330,11 +348,11 @@ input:checked + .slider:before {
 </div>
 </div>
 </div><br><br>
-
-
-
-
-  
+ <img id="imageData"/>
+ <form action="/uploads/images" method="post" enctype="multipart/form-data" >
+<input type="file" name="Upload" onchange="previewFile()"><br>
+<img src="" height="100">
+ </form>
   <div class="container">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
     <div class="modal fade" id="myModal" role="dialog">
