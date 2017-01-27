@@ -8,8 +8,8 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
     body { 
-        background-image: url("http://bit.ly/2k9v8M5");
-       color: white;
+        background-image: url("http://i363.photobucket.com/albums/oo76/aanches/animated-book.gif");
+       
     }
          
     .h1{
@@ -192,7 +192,7 @@ input:checked + .slider:before {
   </div>
 </nav><br><br><br>
     
-    <h1><strong>Edit Challenge</strong></h1>
+    <h1><strong>Book Worm</strong></h1>
 <!--    
      <canvas id="myCanvas" width="600" height="100">
 
@@ -208,17 +208,13 @@ input:checked + .slider:before {
       
      <div class="container">
        <div class="row">
-      <form>
     <div class="col-xs-4">
-     <div> <strong>Challenge Name:</strong>
-  <input type="disabled" name="name" placeholder="Book Worm">
-    </div>
-    <div class="col-xs-4">
-      <form></div>
-    <div><strong>
-  Challenge Type:</strong><br>
-  <input type="disabled" name="type" placeholder="#Read #Books #Bookworm"><br>
-</form><br></div>
+    <div>
+        <strong>
+       Add comment to Stream:</strong><br>
+  <input type="text" name="type" placeholder=" Using #bookworm"><br>
+ <br>
+</div>
       </div>
       </div>
    </div>
@@ -234,70 +230,25 @@ input:checked + .slider:before {
 
     <div class="container"> 
     <div class="dropdown">
-    <select id="see">
-      <option>Public</option>
-      <option><a href="#">Private</a></option>
-  </select>
+    <h4>Check-in: <strong>Weekly</strong></h4>
 </div>
     
     </div> 
+    <div>
+       &nbsp;&nbsp;&nbsp; <input onclick="change()" type="button" value="0" id="myButton1" />
+    </div>
+   
+        function change()
+{
+    document.getElementById("myButton1").value="1"; 
+}
+if(mybutton1.onclick+1)
+        
+    
 
-
+<br>
 
  <div class="container">
-  <h2><strong>Add People</strong></h2>
-  <div>
-  <input id="see" type="text" name="search" placeholder="Search..">
-  </div>
-  <div class="table-responsive">
-      
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Employee ID</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-       <td><input type="checkbox">Akia</td>
-        <td>Young</td>
-        <td>5215698</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox">Julian</td>
-        <td>Damian</td>
-        <td>4859528</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox">Harvey</td>
-        <td>Pierson</td>
-        <td>2865987</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-<div>
-    <a href="ant.html"><button>Remove Selected Participants</button></a>
-</div><br>
-<div class="container">
-  <div class="col-col-xs-4">Inactive&nbsp;&nbsp;<label class="switch">
-  <input type="checkbox">
-  <div class="slider round" id="toggle"></div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Active</p>
-</div>
-</div>
-</div><br><br>
-
-
-
-
-
- 
-  
-  <div class="container">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
     <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
