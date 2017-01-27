@@ -5,6 +5,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script  src="../js/land.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
     body { 
@@ -159,27 +160,29 @@ input[type=text]:focus {
       
      <div class="container">
          <div class="row">
-      <form>
-    <div class="col-xs-4">
-     <div> <strong> Challenge Name:</strong>
-  <input type="disabled" name="name" placeholder="Name">
+      <div class="col-xs-4">
+    <form>
+     <div><strong>
+          Challenge Name:</strong>
+  <input id="see" type="disabled" name="name" placeholder="Name">
     </div>
-    <div class="col-xs-4">
-      <form></div>
+   <br>
     <div><strong>
-  Challenge #Tag:</strong><br>
-  <input type="disabled" name="tag" placeholder="#tag"><br>
-</form><br></div>
+  Challenge #Tag:</strong>
+  <input id="see" type="disabled" name="tag" placeholder="#tag"><br>
+    </form>
+<br>
+</div>
       </div>
+      </div> 
       </div>
-   <BR>
+   <br>
    <div class="container">  
 <form action="action_page.php">
 <input id="see" type="Date" name="Date" value="number"><strong>From</strong>
 <br>
 <input id="see" type="Date" name="Date" value="number"><strong>To</strong>
 <br><br>
-
 </form> 
 </div>
 
@@ -191,13 +194,22 @@ input[type=text]:focus {
   </select>
   
 </div>
-    
+  <BR>  
     </div> 
 <div class="container"> 
 <h4>Goal to Point ratio:<span id="lblName" class="editable">0</span> = 1 point</h4>
 </div>
-
-
+<BR>
+       <div class="container"> 
+    <div class="dropdown">
+        <h4>Participants check in:
+    <select id="see">
+      <option>Daily</a></option>
+      <option>Weekly</option>
+      <option>Bi-monthly</option>
+      <option>Monthly</option>
+  </select>
+ <BR>
  <div class="container">
   <h2><strong>Add People</strong></h2>
   <div>
@@ -239,6 +251,14 @@ input[type=text]:focus {
 </div><br>
 <strong><p id="demo"></p></strong>
 
+    <img id="imageData"/>
+ <form action="/uploads/images" method="post" enctype="multipart/form-data" >
+<input type="file" name="Upload" onchange="previewFile()"><br>
+<img src="" height="100">
+ </form>
+
+
+
  <script>
 function myFunction() {
     var x = document.getElementById("myCheck").value;
@@ -246,6 +266,8 @@ function myFunction() {
 }
 </script>
   
+  
+</div> 
   <div class="container">
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
     <div class="modal fade" id="myModal" role="dialog">
