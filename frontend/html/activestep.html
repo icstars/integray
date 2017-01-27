@@ -234,22 +234,25 @@ input:checked + .slider:before {
 </div>
     
     </div> 
-    <div>
-       &nbsp;&nbsp;&nbsp; <input onclick="change()" type="button" value="0" id="myButton1" />
-    </div>
-   
-        function change()
-{
-    document.getElementById("myButton1").value="1"; 
+    <div>Points: <input type="range" id="myRange" value="60">
+
+<p><strong>Click the button for every 100 pages read.</strong></p>
+
+<button onclick="myFunction()">+100 Pages</button>
+
+<script>
+function myFunction() {
+   document.getElementById("myRange").stepUp();
 }
-if(mybutton1.onclick+1)
+</script>
+      
         
     
 
 <br>
 
  <div class="container">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+    <a href="#"><button type="button" class="btn btn-info btn-lg" ">Submit</button></a>
     <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -271,11 +274,7 @@ if(mybutton1.onclick+1)
              
   
   
-         <div class="container">
-  <h2>Alert</h2>
-    <div class="alert alert-success">
-    <strong>Success!</strong> You've edited your challenge <a href="#" class="alert-link">and your invites went out</a>.
-  </div>
+        
 
 </body>
 
