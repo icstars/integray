@@ -5,6 +5,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script  src="../js/land.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
     body { 
@@ -225,24 +226,26 @@ input:checked + .slider:before {
 <input id="see" type="int" name="Date" value="02/27/2017"><strong>To</strong> 
 <br><br>
 
-</form> 
-</div>
-
-    <div class="container"> 
-    <div class="dropdown">
+  </form> 
+  </div>
+<div class="container"> 
+ <div class="dropdown">
     <h4>Check-in: <strong>Weekly</strong></h4>
 </div>
     
     </div> 
-    <div>
-       &nbsp;&nbsp;&nbsp; <input onclick="change()" type="button" value="0" id="myButton1" />
-    </div>
-   
-        function change()
-{
-    document.getElementById("myButton1").value="1"; 
+    <div>Points: <input type="range" id="myRange" value="60">
+
+<p><strong>Click the button for every 100 pages read.</strong></p>
+
+<button onclick="myFunction()">+100 Pages</button>
+
+<script>
+function myFunction() {
+   document.getElementById("myRange").stepUp();
 }
-if(mybutton1.onclick+1)
+</script>
+      
         
     
 
