@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <style>
+    body { 
+        background-image:  url("http://bit.ly/2k9v8M5");
+        color: white;
+    }
+    #worm{
+      background-image:  url("http://i363.photobucket.com/albums/oo76/aanches/animated-book.gif");
+      color: black;
+      
+    }
+         
+    .h1{
+        font-family:sans-serif;
+    }
+             
+             .navbar {
+      margin-bottom: 0;
+      background-color: #aa1133;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Convergence, sans-serif;
+      top: 0;
+     background-image:url(https://s-media-cache-ak0.pinimg.com/736x/f9/b9/5b/f9b95bcb47938773007c740ae3eaf877.jpg);
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav .active a {
+      color: #5D5776 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  .navbar-brand {
+    width: 150px;
+    height: auto;
+    top:0;
+    }
+    .input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#see{
+  color:black;
+}
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+} 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #669944;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+   table{
+       font-weight: bold;
+   }
+ @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 828px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+   
+    </style>
+         
+     
+         
+  </head>
+  
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+>
+     <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2kbiYX1" class="img-responsive"/>
+        
+        </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     <!-- <a class="navbar-brand" href="https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">
+        <img src="http://bit.ly/2iKgbUk" class="img-responsive"/>
+        </a> -->
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#About">About</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Profile">Profile</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/ant.html">Challenges</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Leaderboard">Leaderboard</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#BV">BV</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Gallery">Gallery</a></li>
+        <li><a href="https://preview.c9users.io/daoy/integray-group-project/frontend/html/connects.html#Locations">Locations</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><br><br>
+    <div id="worm">
+    <h1><strong>Book Worm</strong></h1>
+<!--    
+     <canvas id="myCanvas" width="600" height="100">
+
+<script>
+     var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+        ctx.font = "30px sans-serif";
+        ctx.strokeText("Edit Challenge",10,50);
+  </script>
+      </canvas> -->
+      
+      
+      
+     <div class="container">
+       <div class="row">
+    <div class="col-xs-4">
+    <div>
+        <strong>
+       Add comment to Stream:</strong><br>
+  <input type="text" name="type" placeholder=" Using #bookworm"><br>
+ <br>
+</div>
+      </div>
+      </div>
+   </div>
+   </div>
+   <div class="container">  
+<form action="action_page.php">
+<input id="see" type="int" name="Date" value="01/27/2017"><strong>From</strong>
+<br>
+<input id="see" type="int" name="Date" value="02/27/2017"><strong>To</strong> 
+<br><br>
+
+</form> 
+</div>
+
+    <div class="container"> 
+    <div class="dropdown">
+    <h4>Check-in: <strong>Weekly</strong></h4>
+</div>
+    
+    </div> 
+    <div>Points: <input type="range" id="myRange" value="5">
+
+<p><strong>Click the button for every 100 pages read.</strong></p>
+
+<button id="worm" onclick="myFunction()" class="btn btn-info btn-sm">+100 Pages</button>
+<br>
+
+<script>
+function myFunction() {
+   document.getElementById("myRange").stepUp();
+}
+</script>
+      
+        
+    
+
+<br>
+
+ <div class="container">
+    <a href="#"><button type="button" class="btn btn-info btn-lg" ">Submit</button></a>
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Goal Header</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="form-control" id="text" placeholder="Read 10 books by end of challenge">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" value="Input Button" onclick="location.href = 'https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io';"></a> Save</button>
+          </div>
+        </div>
+        </div>
+             
+  
+  
+        
+
+</body>
+
+</html>

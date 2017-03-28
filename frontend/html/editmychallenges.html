@@ -8,8 +8,8 @@
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <style>
     body { 
-        background-image: url("http://i363.photobucket.com/albums/oo76/aanches/animated-book.gif");
-       
+        background-image: url("http://bit.ly/2k9v8M5");
+       color: white;
     }
          
     .h1{
@@ -192,7 +192,7 @@ input:checked + .slider:before {
   </div>
 </nav><br><br><br>
     
-    <h1><strong>Book Worm</strong></h1>
+    <h1><strong>Edit My Challenges</strong></h1>
 <!--    
      <canvas id="myCanvas" width="600" height="100">
 
@@ -203,56 +203,49 @@ input:checked + .slider:before {
         ctx.strokeText("Edit Challenge",10,50);
   </script>
       </canvas> -->
-      
-      
-      
-     <div class="container">
-       <div class="row">
-    <div class="col-xs-4">
-    <div>
-        <strong>
-       Add comment to Stream:</strong><br>
-  <input type="text" name="type" placeholder=" Using #bookworm"><br>
- <br>
-</div>
-      </div>
-      </div>
-   </div>
-   <div class="container">  
-<form action="action_page.php">
-<input id="see" type="int" name="Date" value="01/27/2017"><strong>From</strong>
-<br>
-<input id="see" type="int" name="Date" value="02/27/2017"><strong>To</strong> 
-<br><br>
-
-</form> 
+   
 </div>
 
-    <div class="container"> 
-    <div class="dropdown">
-    <h4>Check-in: <strong>Weekly</strong></h4>
-</div>
-    
-    </div> 
-    <div>Points: <input type="range" id="myRange" value="60">
-
-<p><strong>Click the button for every 100 pages read.</strong></p>
-
-<button onclick="myFunction()">+100 Pages</button>
-
-<script>
-function myFunction() {
-   document.getElementById("myRange").stepUp();
-}
-</script>
-      
-        
-    
-
-<br>
 
  <div class="container">
-    <a href="#"><button type="button" class="btn btn-info btn-lg" ">Submit</button></a>
+  <h2><strong></strong></h2>
+  <div>
+  <input id="see" type="text" name="search" placeholder="Search..">
+  </div>
+  <div class="table-responsive">
+      
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Active Challenges</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr>
+        <td><input type="checkbox">Book Worm</td>
+
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+</div>
+<div>
+   
+</div>
+
+</div>
+
+
+
+
+
+ 
+  
+  <div class="container">
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit Challenge</button>
     <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -262,20 +255,16 @@ function myFunction() {
           <h4 class="modal-title">Goal Header</h4>
         </div>
         <div class="modal-body">
-          <input type="text" class="form-control" id="text" placeholder="Read 10 books by end of challenge">
+          <input type="text" class="form-control" id="text" placeholder="Read 5k pages by end of month">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
           <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" value="Input Button" onclick="location.href = 'https://preview.c9users.io/greg24/intergray/frontend/html/connects.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io';"></a> Save</button>
+         <a href="https://preview.c9users.io/greg24/intergray/frontend/html/activebook.html?_c9_id=livepreview6&_c9_host=https://ide.c9.io">Edit</a>
           </div>
         </div>
         </div>
-             
-  
-  
         
-
 </body>
 
 </html>
